@@ -1,24 +1,14 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import useWindowSize from "./hooks/useWindowSize";
+import Calculator from "./components/ui/Calculator";
 
 function App() {
+  const { width, height } = useWindowSize();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      className="App w-screen h-screen bg-gray-900 flex justify-center items-center p-4 text-white"
+      style={{ width: `${width}px`, height: `${height}px` }}
+    >
+      <Calculator />
     </div>
   );
 }

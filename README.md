@@ -1,4 +1,4 @@
-## Conversion Calculator (https://conversion-calculator.noahgothacked.com)
+## Conversion Calculator (http://conversion-calculator-client.s3-website.us-east-2.amazonaws.com/)
 
 An application used to convert different units of measurement. Build using React, Typescript, and Tailwind
 

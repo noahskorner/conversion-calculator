@@ -11,7 +11,7 @@ const Calculator = () => {
   const [quantity, setQuantity] = useState(1);
   const [sourceUnit, setSourceUnit] = useState(UNIT_TYPE.GALLON);
   const [desiredUnit, setDesiredUnit] = useState(UNIT_TYPE.GALLON);
-  const [conversion, setConversion] = useState<number | null>(null);
+  const [conversion, setConversion] = useState<number>(1);
 
   const convertUnits = () => {
     setConversion(convert(quantity, sourceUnit, desiredUnit));
@@ -101,7 +101,7 @@ const Calculator = () => {
           </select>
         </div>
       </div>
-      {conversion && (
+      {!isNaN(conversion) && (
         <span className="w-full p-2 rounded border border-blue-600 text-center">
           {quantity}&nbsp;
           {sourceUnit} is{" "}

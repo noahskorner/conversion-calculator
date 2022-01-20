@@ -11,22 +11,6 @@ body {
 .font-primary {
   font-family: "Roboto", sans-serif;
 }
-
-/* Inputs */
-input::-webkit-input-placeholder {
-  font-weight: 300;
-}
-input::-moz-placeholder {
-  font-weight: 300;
-}
-input::-ms-input-placeholder {
-  font-weight: 300;
-}
-input {
-  outline: none;
-}
-
-/* Buttons */
-button:active {
-  margin-left: -0.125rem;
+option {
+  text-transform: lowercase !important;
 }
